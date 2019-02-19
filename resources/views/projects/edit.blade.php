@@ -30,7 +30,9 @@
 		</div>
 
 	</form>
-	
+
+	@include('errors')
+
 	<form method="POST" action="/projects/{{ $project->id }}" style="margin-top: 20px;">
 		@csrf
 		@method('DELETE')
